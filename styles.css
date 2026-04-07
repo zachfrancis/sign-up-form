@@ -20,23 +20,41 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-img, picture, video, canvas, svg {
+img,
+picture,
+video,
+canvas,
+svg {
   display: block;
   max-width: 100%;
 }
 
-input, button, textarea, select {
+input,
+button,
+textarea,
+select {
   font: inherit;
 }
 
-p, h1, h2, h3, h4, h5, h6 {
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   overflow-wrap: break-word;
 }
 
 p {
   text-wrap: pretty;
 }
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   text-wrap: balance;
 }
 
@@ -47,21 +65,23 @@ h1, h2, h3, h4, h5, h6 {
 /* End CSS Reset */
 
 @font-face {
-    font-family: 'Norse';
-    src: url('fonts/Norse-Bold.woff2') format('woff2'),
-        url('fonts/Norse-Bold.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Norse";
+  src:
+    url("fonts/Norse-Bold.woff2") format("woff2"),
+    url("fonts/Norse-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Norse';
-    src: url('fonts/Norse.woff2') format('woff2'),
-        url('fonts/Norse.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Norse";
+  src:
+    url("fonts/Norse.woff2") format("woff2"),
+    url("fonts/Norse.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
 body {
@@ -69,14 +89,21 @@ body {
   flex-direction: row;
   width: 100%;
   min-height: 100vh;
+  font-family: Consolas, sans-serif;
+}
+
+h1 {
+  font-family: "Norse", sans-serif;
+  font-size: 72px;
+  font-weight: 700;
 }
 
 .sidebar {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 25vw;
-  min-width: 250px;
+  width: 30vw;
+  min-width: 300px;
   border: 1px solid black;
 }
 
@@ -84,6 +111,7 @@ body {
   display: flex;
   flex-direction: column;
   width: 75vw;
+  background-color: rgb(245, 245, 245);
 }
 
 .odin-bar {
@@ -92,15 +120,55 @@ body {
 
 .intro {
   margin-top: 15vh;
-}
-
-h1 {
-  font-family: "Norse", sans-serif;
-  font-size: 24px;
-  font-weight: 700;
+  padding-left: 32px;
 }
 
 .form-block {
+  font-size: 18px;
+  font-weight: 700px;
   margin-top: 2em;
   margin-bottom: 1.5em;
+  padding-left: 32px;
+  padding-top: 16px;
+  padding-bottom: 32px;
+  background-color: white;
+  box-shadow: 5px 5px 5px rgb(200, 200, 200);
+}
+
+.form-block form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.form-row {
+  display: flex;
+  gap: 64px;
+}
+
+.form-input label {
+  font-size: 12px;
+}
+
+.form-input {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-input input {
+  border: 1px solid #d6d9dc;
+  border-radius: 3px;
+}
+
+.form-row input:focus {
+  border: 1px solid blue;
+  box-shadow: 2px 2px 2px rgb(200, 200, 200);
+}
+
+.form-row input:invalid {
+  border: 1px solid #d55c5f;
+}
+
+.footer {
+  padding-left: 32px;
 }
