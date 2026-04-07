@@ -48,8 +48,8 @@ h1, h2, h3, h4, h5, h6 {
 
 @font-face {
     font-family: 'Norse';
-    src: url('Norse-Bold.woff2') format('woff2'),
-        url('Norse-Bold.woff') format('woff');
+    src: url('fonts/Norse-Bold.woff2') format('woff2'),
+        url('fonts/Norse-Bold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
@@ -57,9 +57,47 @@ h1, h2, h3, h4, h5, h6 {
 
 @font-face {
     font-family: 'Norse';
-    src: url('Norse.woff2') format('woff2'),
-        url('Norse.woff') format('woff');
+    src: url('fonts/Norse.woff2') format('woff2'),
+        url('fonts/Norse.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
+
+body {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 25vw;
+  border: 1px solid black;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 75vw;
+}
+
+.odin-bar {
+  margin-top: 20vh;
+}
+
+.intro {
+  margin-top: 15vh;
+}
+
+h1 {
+  font-family: "Norse", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+
